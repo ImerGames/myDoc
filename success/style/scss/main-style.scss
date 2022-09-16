@@ -1,0 +1,131 @@
+@import "_reset";
+@import "_fonts";
+@import "_variable";
+@import "_ui";
+
+body{
+    font-family: $font_CG;
+}
+header
+{
+    padding-top: 30px;
+    & > .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 40px;
+        & > .logo{
+            padding-left: 80px;
+            & > h1{
+                font-family:$font_CG;
+                font-size: 35px;
+                font-weight: 400;
+                color: rgba($color: #161616, $alpha: .8);
+            }
+        }
+        & > nav{
+            display: flex;
+            align-items: center;
+            & > .list{
+                display: flex;
+                & > li{
+                    margin-right: 50px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    & > a{
+                        color:rgba($color: #161616, $alpha: .5);
+                        font-size: 18px;
+                        font-weight: 400;
+                        text-decoration: none;
+                        white-space: nowrap;
+                        transition: .3s ease-in-out , text-shadow .2s ease-in-out;
+                        &:hover{
+                            color:rgba($color: #b3b3b3, $alpha: .5);
+                        }
+                        &:active{
+                            text-shadow: rgba($color: #6b6b6b, $alpha: 1) 0 0 20px;
+                        }
+                    }
+                }
+            }
+        }
+        & > .info{
+            display: flex;
+            align-items: center;
+            & > .title{
+                color:rgba($color: #161616, $alpha: .8);
+                font-family: $font_CG;
+                font-size: 25px;
+                white-space: nowrap;
+                font-weight: 400;
+            }
+            & > .button__wrapper{
+                margin-left: 30px;
+            }
+        }
+    }   
+}
+.main__page{
+    & > main{
+        & > .section__main{
+            & > .backgraund_liner{
+                position: absolute;
+                top:-0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background: rgb(235,235,235);
+                background: linear-gradient(141deg, rgba(235,235,235,0.75) 0%, rgba(255,255,255,0) 100%);
+                z-index: -2;
+            }
+            & > .container{
+                display: flex;
+                & > .left{
+                    width: 70%;
+                    & > .logo{
+                        margin-left: 70px;
+                        margin-top: 150px;
+                    }
+                    & > .pre{
+                        color:rgba($color: #7A7A7A, $alpha: .8);
+                        text-align: center;
+                        transform: translateX(-100px);
+                        padding-top: 50px;                   
+                    }
+                }
+                & > .right{
+                    width: 30%;
+                    & > .list{
+                        margin-top: 80px;
+                        width: 100%;
+                        position: relative;
+                        z-index: 1;
+                        & > li{
+                            line-height: 1.2;
+                            border-radius: 16px;
+                            border-bottom-left-radius: 0;
+                            display: inline-block;
+                            padding: 26px;
+                            padding-left: 22px;
+                            padding-right: 22px;
+                            color:#000000;
+                            font-size: 18px;
+                            background: rgba($color: #E4E4E4, $alpha: .43);
+                            margin-bottom: 20px;
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                            cursor: default;
+                            transition: .3s ease-in-out;
+                            &:hover{
+                                background: white;
+                                box-shadow: rgba(0, 0, 0, 0.096) 0 0 50px 2px;
+                            }
+                        }
+                    }
+                }
+            }  
+        }
+        
+    }
+}

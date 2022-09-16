@@ -1,0 +1,39 @@
+.button-ui-1{
+    width: 100%;
+    height: auto;
+    padding: 28px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #EE964B;
+    color:#161616;
+    white-space: nowrap;
+    font-size: 16px;
+    font-family: $font_CG;
+    font-weight: 400;
+    border-radius: 50px;
+    box-shadow: rgba($color: #EE964B, $alpha: .5) 0 0 50px 7px;
+    transition: .3s ease-in-out;
+    &:hover{
+        background: #e0934f;
+    }
+    &:active{
+        background: #eb872f;
+        transition: .001s ease;
+    }
+}
+
+.background__images{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    z-index: -1;
+    left: 0;
+    & > .bg_1{
+        position: absolute;
+        right: 0%;
+        top:0;
+        max-width: 1550px;
+        z-index: -1;
+    }
+}
