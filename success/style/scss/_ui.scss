@@ -1,3 +1,13 @@
+header>.container>.info > img{
+    display: none;
+    margin-left: 38px;
+}
+.swiper .mobile__container{
+    display: none;
+}
+.our__pagination{
+    display: none !important;
+}
 .button-ui-1{
     width: 100%;
     height: auto;
@@ -11,7 +21,7 @@
     font-family: $font_CG;
     font-weight: 400;
     border-radius: 50px;
-    box-shadow: rgba($color: #EE964B, $alpha: .5) 0 0 50px 7px;
+    box-shadow: rgb(238 150 75 / 50%) 15px 10px 30px 1px;
     transition: .3s ease-in-out;
     &:hover{
         background: #e0934f;
@@ -19,6 +29,15 @@
     &:active{
         background: #eb872f;
         transition: .001s ease;
+    }
+    &:disabled{
+        box-shadow: none;
+        &:hover{
+            background: #EE964B;
+        }
+        &:active{
+            background: #EE964B;
+        }
     }
 }
 .button__ui__1-mini{
@@ -35,7 +54,7 @@
     font-family: $font_CG;
     font-weight: 400;
     border-radius: 50px;
-    box-shadow: rgba($color: #EE964B, $alpha: .5) 0 0 50px 7px;
+    box-shadow: rgb(238 150 75 / 40%) 15px 10px 40px -2px;
     transition: .3s ease-in-out;
     &:hover{
         background: #e0934f;
@@ -61,6 +80,7 @@
     }
 }
 .input_ui_number{
+    letter-spacing: 8px;
     width: 100%;
     background: #ffffff;
     border-radius: 68px;
@@ -85,18 +105,37 @@
     z-index: 0;
     z-index: -1;
     left: 0;
+    & > .bg_215{
+        position: absolute;
+        top:100px
+    }
+    & > .bg_5_2{
+        position: absolute;
+        top:50%;
+        transform: translate(-50% -50%);
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    & > .bg_2_3{
+        position: absolute;
+        top:-300px;
+        width: 100%;
+        width: 1000px;
+        left: 0;
+    }
     & > .bg_2_1{
         position: absolute;
         top:-100px;
         width: 100%;
-        max-width: 700px;
+        max-width: 930px;
         right: 0;
     }
     & > .bg_1{
         position: absolute;
         right: 0%;
         top:0;
-        max-width: 1550px;
+        max-width: 1600px;
         z-index: -1;
     }
     & > .bg_2{
@@ -105,7 +144,7 @@
         top:50%;
         transform: translateY(-50%);
         max-width: 800px;
-        width: 500px;
+        width: 700px;
         z-index: -1;
     }
     & > .bg_3{
@@ -120,10 +159,18 @@
     & > .bg_4{
         position: absolute;
         right: 0;
-        bottom: 0;
+        top:-180px;
         transform: translateY(100px);
-        max-width: 800px;
-        width: 500px;
+        max-width: 900px;
+        width: 850px;
+        z-index: -1;
+    }
+    & > .bg_2_2{
+        position: absolute;
+        right: -1px;
+        top: -778px;
+        max-width: 1120px;
+        width: 100%;
         z-index: -1;
     }
     & > .bg_5{
@@ -148,7 +195,7 @@
     & > .bg_7_r{
         position: absolute;
         right: 0;
-        top:50%;
+        top:55%;
         transform: translateY(-50%);
         max-width: 800px;
         width: 500px;
@@ -159,8 +206,8 @@
         right: 0;
         top:50%;
         transform: translateY(-50%);
-        max-width: 800px;
-        width: 800px;
+        max-width: 1000px;
+        width: 900px;
         z-index: -1;
     }
     & > .footer_bg{
@@ -187,6 +234,7 @@
 .section__speak{
     padding-top: 80px;
     padding-bottom: 80px;
+    background: #ffffff;
     & > .container{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -224,7 +272,8 @@
             & > p{
                 width: 100%;
                 font-size: 28px;
-                line-height: 1.2;
+                line-height: 1.5;
+                letter-spacing: 2px;
                 margin-bottom: 33px;
             }
             & > .wrapper__button{
@@ -237,11 +286,11 @@
 }
 .section__partners{
     padding-top: 20px;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
     & > .container{
         & > h2{
             color:#000000;
-            margin-bottom: 30px;
+            margin-bottom: 100px;
             font-size: 35px;
             font-weight: 400;
             & > span{
@@ -260,7 +309,7 @@
 
 footer{
     position: relative;
-    background: rgb(213 213 213);
+    background: rgb(247 247 247);
     padding-top: 100px;
     font-family: "";
     & .background__images{
@@ -304,7 +353,7 @@ footer{
                         text-decoration: none;
                         color:#000000;
                         font-size: 32px;
-                        font-weight: 500;
+                        font-weight: 700;
                         & > span{
                             color:#EE964B;
                         }
