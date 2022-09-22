@@ -148,8 +148,10 @@ $(document).ready(function(){
                     percentPosition: true,
                     gutter:50
                 });  
-                component.masonry('resize');
-                console.log("resize");
+                setTimeOut(function(){
+                    component.masonry('resize');
+                    console.log("resize");
+                },5000);
             }else{
                 // swiper init
                 if(swiper_init == true) return;
