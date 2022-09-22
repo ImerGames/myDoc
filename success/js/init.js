@@ -149,7 +149,7 @@ $(document).ready(function(){
                         percentPosition: true,
                         gutter:50
                     });  
-                },100);
+                },1000);
             }else{
                 // swiper init
                 if(swiper_init == true) return;
