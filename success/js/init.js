@@ -144,17 +144,12 @@ $(document).ready(function(){
                 if(masonry_init == true) return;
                 masonry_init = true;
                 setTimeout(function(){
-                    component.masonry({
-                    itemSelector: '.image_item',
-                    percentPosition: true,
-                    gutter:50
-                });  
-                },5000);
-                
-                setTimeout(function(){
-                    component.masonry('resize');
-                    console.log("resize");
-                },5000);
+                        component.masonry({
+                        itemSelector: '.image_item',
+                        percentPosition: true,
+                        gutter:50
+                    });  
+                });
             }else{
                 // swiper init
                 if(swiper_init == true) return;
