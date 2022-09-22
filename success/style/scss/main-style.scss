@@ -108,8 +108,8 @@ header
 }
 .about__page{
     font-family: "Century Gothic" , sans-serif;
+    overflow-x: hidden !important;
     & > main{
-        overflow: hidden !important;
         & > .section__main{
             padding-top: 120px;
             padding-bottom: 120px;
@@ -304,6 +304,7 @@ header
         }
         & > .section__experts{
             padding-top: 160px;
+            padding-bottom: 120px;
             position: relative;
             & > .container{
                 & > h2{
@@ -317,6 +318,11 @@ header
                     }
                 }
                 & > .container__swiper{
+                    &.slid{
+                        & .swiper-slide{
+                            box-shadow: rgba(24, 24, 24, 0.178) 30px 0 30px -10px;
+                        }
+                    }
                     display: flex;
                     align-items: center;
                     & > .swiper {
@@ -335,10 +341,10 @@ header
                             }
                         }
                         & > .swiper-wrapper{
-                            // padding-top: 50px;
-                            // padding-bottom: 50px;
+                            padding-top: 50px;
+                            padding-bottom: 50px;
                             & > .swiper-slide{
-                                box-shadow: black 20px 0 100px 1px;
+                                
                                 &.main{
                                     border-radius: 67px;
                                     & > .wrapper{
@@ -519,9 +525,10 @@ header
             }
         }
         & > .section__more{
-            padding-top: 127px;
-            padding-bottom: 127px;
-            background: rgba($color: #F9F9F9, $alpha: .5);
+            padding-top: 87px;
+            padding-bottom: 107px;
+            background: rgba(250, 250, 250, 0.418);
+            box-shadow:inset rgb(163 163 163 / 19%) 0 0 100px 1px;
             & > .container{
                 padding-left: 200px;
                 padding-right: 200px;
@@ -532,7 +539,7 @@ header
                     text-align: center;
                     font-family: "Century Gothic" , sans-serif;
                     font-weight: 400;
-                    font-size: 65px;
+                    font-size: 95px;
                     color:#444444; 
                     margin-bottom: 50px;
                     & > span{
@@ -540,11 +547,13 @@ header
                     }
                 }
                 & > p{
-                    max-width: 800px;
+                    max-width: 1200px;
                     width: 100%;
+                    line-height: 1.7;
                     text-align: center;
-                    font-size: 20px;
+                    font-size: 25px;
                     color: #000000;
+                    margin-bottom: 30px;
                 }
                 & > .list{
                     display: grid;
