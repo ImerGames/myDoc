@@ -143,11 +143,14 @@ $(document).ready(function(){
             if(width > 900){
                 if(masonry_init == true) return;
                 masonry_init = true;
-                component.masonry({
+                setTimeout(function(){
+                    component.masonry({
                     itemSelector: '.image_item',
                     percentPosition: true,
                     gutter:50
                 });  
+                },5000);
+                
                 setTimeout(function(){
                     component.masonry('resize');
                     console.log("resize");
