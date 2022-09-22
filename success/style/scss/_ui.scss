@@ -8,6 +8,7 @@ header>.container>.info > img{
 .our__pagination{
     display: none !important;
 }
+
 .button-ui-1{
     width: 100%;
     height: auto;
@@ -31,7 +32,6 @@ header>.container>.info > img{
         transition: .001s ease;
     }
     &:disabled{
-        box-shadow: none;
         &:hover{
             background: #EE964B;
         }
@@ -67,7 +67,7 @@ header>.container>.info > img{
 // input ui
 
 .ui-input-2{
-    width: 200px;
+    width: 260px;
     background: transparent;
     font-family: "Century Gothic" , sans-serif;
     color:#E9E9E9;
@@ -207,7 +207,7 @@ header>.container>.info > img{
         top:50%;
         transform: translateY(-50%);
         max-width: 1000px;
-        width: 900px;
+        width: 997px;
         z-index: -1;
     }
     & > .footer_bg{
@@ -267,14 +267,14 @@ header>.container>.info > img{
             & > h2{
                 font-size: 38px;
                 color:#EE964B;
-                margin-bottom: 13px;
+                margin-bottom: 30px;
             }
             & > p{
                 width: 100%;
                 font-size: 28px;
                 line-height: 1.5;
                 letter-spacing: 2px;
-                margin-bottom: 33px;
+                margin-bottom: 50px;
             }
             & > .wrapper__button{
                 & > button{
@@ -285,7 +285,7 @@ header>.container>.info > img{
     }
 }
 .section__partners{
-    padding-top: 20px;
+    padding-top: 120px;
     padding-bottom: 120px;
     & > .container{
         & > h2{
@@ -309,6 +309,7 @@ header>.container>.info > img{
 
 footer{
     position: relative;
+    padding-bottom: 40px;
     background: rgb(243 243 243);
     padding-top: 100px;
     font-family: "";

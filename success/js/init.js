@@ -5,9 +5,42 @@ $(document).ready(function(){
     let swiper_init = false;
     
     init_slider();    
+
+    // $(".section__work.video iframe").on("load", () => {
+    //     // let iframeHead = $("iframe").contents().find("head");
+    //     // let iframeCSS = "<style>.iframe-css{color: #e91905}</style>"; //.ytp-large-play-button-red-bg .ytp-large-play-button-bg{fill: #ee964b !important;
+    //     // $(iframeHead).append(iframeCSS);
+    //     var frame=document.createElement("iframe"); 
+    //     frame.contentWindow.document.ELEM.style.STYLE
+    // });
+
     resizer__section__our(true);
     $(window).resize(function(){
         resizer__section__our(false);
+    });
+    new Swiper("#swiper_lds",{
+        spaceBetween: 10,
+        slidesPerView: 1,
+        pagination: {
+            el: ".swiper-lds-pagination",
+            clickable: true,
+        },
+    });
+    new Swiper("#swiper_lds2",{
+        spaceBetween: 10,
+        slidesPerView: 1,
+        pagination: {
+            el: ".swiper-lds-pagination",
+            clickable: true,
+        },
+    });
+    new Swiper("#swiper_lds3",{
+        spaceBetween: 10,
+        slidesPerView: 1,
+        pagination: {
+            el: ".swiper-lds-pagination",
+            clickable: true,
+        },
     });
     new Swiper(".swiper__serteficate",{
         spaceBetween: 30,
@@ -25,6 +58,7 @@ $(document).ready(function(){
             }
         }
     });
+    
     let swiper_thrumb_express = new Swiper("#swiper__express_thrumb",{
         spaceBetween: 10,
         slidesPerView: 3,
