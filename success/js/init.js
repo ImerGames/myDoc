@@ -148,8 +148,8 @@ $(document).ready(function(){
                     percentPosition: true,
                     gutter:50
                 });  
+                component.masonry('resize');
             }else{
-                console.log("init");
                 // swiper init
                 if(swiper_init == true) return;
                 swiper_init = true;
@@ -331,7 +331,6 @@ $(document).ready(function(){
         }else if($(".slick_items").hasClass("slick-initialized") == true && $(window).width() >= 1200 ){
             $(".slick_items").slick("unslick");
         }
-        console.log($(window).width() <= 1200 && $(".slick__program").hasClass("slick-initialized") == false);
         if($(window).width() <= 1200 && $(".slick__program").hasClass("slick-initialized") == false){
             $(".slick__program").slick({
                 arrows:false,
