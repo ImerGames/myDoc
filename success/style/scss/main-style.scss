@@ -591,6 +591,8 @@ header
                     }
                 }
                 & > .swiper-init-our{
+                    opacity: 0;
+                    transition: .3s ease-in-out;
                     height: 100%;
                     & > .our__pagination{
                         width: 100%;

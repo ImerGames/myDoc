@@ -137,6 +137,7 @@ $(document).ready(function(){
             
         }
     });
+    
     function resizer__section__our(isInit){
         let width = $(window).width();
         if(isInit){
@@ -144,11 +145,12 @@ $(document).ready(function(){
                 if(masonry_init == true) return;
                 masonry_init = true;
                 setTimeout(function(){
-                        component.masonry({
+                    component.masonry({
                         itemSelector: '.image_item',
                         percentPosition: true,
                         gutter:50
                     });  
+                    $(".swiper-init-our").css("opacity","1");
                 },1000);
             }else{
                 // swiper init
@@ -180,11 +182,14 @@ $(document).ready(function(){
                 $(".swiper-init-our").children().children().each(function(){
                     $(this).removeClass("swiper-slide");
                 });
-                component.masonry({
-                    itemSelector: '.image_item',
-                    percentPosition: true,
-                    gutter:50
-                });  
+                setTimeout(function(){
+                    component.masonry({
+                        itemSelector: '.image_item',
+                        percentPosition: true,
+                        gutter:50
+                    });  
+                    $(".swiper-init-our").css("opacity","1");
+                },1000);
             }else{
                 if(masonry_init == false) return;
                 masonry_init = false;
