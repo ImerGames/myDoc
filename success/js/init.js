@@ -149,6 +149,7 @@ $(document).ready(function(){
                     gutter:50
                 });  
             }else{
+                console.log("init");
                 // swiper init
                 if(swiper_init == true) return;
                 swiper_init = true;
