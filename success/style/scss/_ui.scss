@@ -8,7 +8,9 @@ header>.container>.info > img{
 .our__pagination{
     display: none !important;
 }
-
+.mobile{
+    display: none !important;
+}
 .button-ui-1{
     width: 100%;
     height: auto;
@@ -119,7 +121,7 @@ header>.container>.info > img{
     }
     & > .bg_2_3{
         position: absolute;
-        top:-300px;
+        top:-600px;
         width: 100%;
         width: 1155px;
         left: 0;

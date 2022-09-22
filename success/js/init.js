@@ -6,13 +6,21 @@ $(document).ready(function(){
     
     init_slider();    
 
-    // $(".section__work.video iframe").on("load", () => {
-    //     // let iframeHead = $("iframe").contents().find("head");
-    //     // let iframeCSS = "<style>.iframe-css{color: #e91905}</style>"; //.ytp-large-play-button-red-bg .ytp-large-play-button-bg{fill: #ee964b !important;
-    //     // $(iframeHead).append(iframeCSS);
-    //     var frame=document.createElement("iframe"); 
-    //     frame.contentWindow.document.ELEM.style.STYLE
-    // });
+    $(".main__page>main>.section__main>.container>.right>.list .wrapper>.item").mouseenter(function(){
+        console.log(1);
+        let title = $(this).attr("data-title");
+        let text  = $(this).text();
+        $(this).text(title);
+        $(this).attr("data-title",text);
+    });
+
+    $(".main__page>main>.section__main>.container>.right>.list .wrapper>.item").mouseleave(function(){
+        console.log(1);
+        let title = $(this).attr("data-title");
+        let text  = $(this).text();
+        $(this).text(title);
+        $(this).attr("data-title",text);
+    });
 
     resizer__section__our(true);
     $(window).resize(function(){
