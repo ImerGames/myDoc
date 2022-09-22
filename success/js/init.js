@@ -148,7 +148,7 @@ $(document).ready(function(){
                     percentPosition: true,
                     gutter:50
                 });  
-                setTimeOut(function(){
+                setTimeout(function(){
                     component.masonry('resize');
                     console.log("resize");
                 },5000);
