@@ -149,6 +149,7 @@ $(document).ready(function(){
                     gutter:50
                 });  
                 component.masonry('resize');
+                console.log("resize");
             }else{
                 // swiper init
                 if(swiper_init == true) return;
