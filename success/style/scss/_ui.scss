@@ -302,6 +302,7 @@ header>.container>.info > img{
         }
         & > .grid__container{
             display: grid;
+            grid-row-gap: 50px;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             & > .item{
                 position: relative;
