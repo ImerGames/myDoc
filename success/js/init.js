@@ -3,34 +3,46 @@ $(document).ready(function(){
     let component = $(".grid__slider__list_our");
     let masonry_init = false;
     let swiper_init = false;
+    let globalLock = false;
     
     init_slider();    
+    initHeight();
 
     $(".main__page>main>.section__main>.container>.right>.list .wrapper>.item").mouseenter(function(){
-        let title = $(this).attr("data-title");
-        let text  = $(this).children().text();
-        $(this).children().fadeOut(200);
-        setTimeout(() => {
-            $(this).addClass("active");
-            $(this).children().text(title);
-            $(this).attr("data-title",text);
-            $(this).children().fadeIn(200);
-        }, 200);
+        setCustomHeight($(this) , "true");
     });
-
     $(".main__page>main>.section__main>.container>.right>.list .wrapper>.item").mouseleave(function(){
-        let title = $(this).attr("data-title");
-        let text  = $(this).children().text();
-        $(this).children().fadeOut(200);
-        setTimeout(() => {
-            $(this).removeClass("active");
-            $(this).children().text(title);
-            $(this).attr("data-title",text);
-            $(this).children().fadeIn(200);
-        }, 200);
-
+        setCustomHeight($(this) , "true");
     });
 
+    function initHeight(){
+        $(".section__main>.container>.right .item").each(function(){
+            let new_height = $(this).children().height();
+            $(this).height(new_height);
+        });
+    }
+    function setCustomHeight(obj , isHover){
+        let title = obj.attr("data-title");
+        let text  = obj.children().text();
+        obj.children().fadeOut(100);
+        setTimeout(()=>{
+            obj.children().text(title);
+            obj.attr("data-title",text);
+            obj.toggleClass("active");
+            setTimeout(()=>{
+                let new_height = obj.children().height();
+                obj.height(new_height);
+                            
+                setTimeout(() => {
+                    obj.children().fadeIn(300);
+                    setTimeout(()=>{
+                        globalLock = false;
+                    },300);
+                }, 300);
+            },200);
+
+        },100);
+    }
     resizer__section__our(true);
     $(window).resize(function(){
         resizer__section__our(false);

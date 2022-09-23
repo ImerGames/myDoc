@@ -111,6 +111,7 @@ header
     overflow-x: hidden !important;
     & > main{
         & > .section__main{
+            height: 100vh;
             padding-top: 150px;
             padding-bottom: 120px;
             position: relative;
@@ -142,6 +143,10 @@ header
                     }
                 }
                 & > .wrapper{
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
                     margin-top: 140px;
                     width: 100%;
                     display: flex;
@@ -362,7 +367,7 @@ header
                     font-family: "Century Gothic" , sans-serif;
                     font-size: 60px;
                     color:#444444;
-                    margin-bottom: 10px;
+                    margin-bottom: 20px;
                     text-align: center;
                     & > span{
                         color:#EE964B;
@@ -518,7 +523,7 @@ header
                                     background: white;
                                     & > .left > img{
                                         width: 111px;
-                                        height: 126px;
+                                        height: 100%;
                                         object-fit: cover;
                                     }
                                     & > .right{
@@ -841,7 +846,6 @@ header
                                 min-height: 70px;
                                 cursor: default;
                                 transition: .3s ease-in-out;
-                                transition: font-size 0s;
                                 & > p{
                                     min-width: 100%;
                                 }
