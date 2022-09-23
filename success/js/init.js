@@ -3,42 +3,42 @@ $(document).ready(function(){
     let component = $(".grid__slider__list_our");
     let masonry_init = false;
     let swiper_init = false;
-    let globalLock = false;
     
     init_slider();    
     initHeight();
 
     $(".main__page>main>.section__main>.container>.right>.list .wrapper>.item").mouseenter(function(){
-        setCustomHeight($(this) , "true");
+        setCustomHeight($(this) , false);
     });
     $(".main__page>main>.section__main>.container>.right>.list .wrapper>.item").mouseleave(function(){
-        setCustomHeight($(this) , "true");
+        setCustomHeight($(this) , true);
     });
 
     function initHeight(){
         $(".section__main>.container>.right .item").each(function(){
             let new_height = $(this).children().height();
+            let width = $(this).children(".title").width();
             $(this).height(new_height);
         });
     }
-    function setCustomHeight(obj , isHover){
-        let title = obj.attr("data-title");
-        let text  = obj.children().text();
+    function setCustomHeight(obj , isOpen){
+        let text = NaN;
+        if(isOpen){
+            text  = obj.children(".FrontText").text();
+        }else{
+            text  = obj.children(".BackText").text();
+        }
+        
         obj.children().fadeOut(100);
         setTimeout(()=>{
-            obj.children().text(title);
-            obj.attr("data-title",text);
+            obj.children(".title").text(text);
             obj.toggleClass("active");
             setTimeout(()=>{
-                let new_height = obj.children().height();
-                obj.height(new_height);
-                            
+                let new_height = obj.children(".title").height();
+                obj.height(new_height);    
                 setTimeout(() => {
-                    obj.children().fadeIn(300);
-                    setTimeout(()=>{
-                        globalLock = false;
-                    },300);
-                }, 300);
+                    obj.children(".title").fadeIn(200);
+                }, 1);
             },200);
 
         },100);
@@ -381,7 +381,6 @@ $(document).ready(function(){
                 dots:true,
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                autoplay: true,
                 responsive: [
                     {
                       breakpoint: 700,
@@ -413,7 +412,6 @@ $(document).ready(function(){
                 dots:true,
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                autoplay: true,
                 responsive: [
                     {
                       breakpoint: 1000,
@@ -448,7 +446,6 @@ $(document).ready(function(){
                 dots:false,
                 slidesToShow: 4,
                 slidesToScroll: 1,
-                autoplay: true,
                 centerMode:true,
                 responsive: [
                     {
