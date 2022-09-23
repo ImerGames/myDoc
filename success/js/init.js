@@ -7,48 +7,33 @@ $(document).ready(function(){
     init_slider();    
 
     $(".main__page>main>.section__main>.container>.right>.list .wrapper>.item").mouseenter(function(){
-        console.log(1);
         let title = $(this).attr("data-title");
-        let text  = $(this).text();
-        $(this).text(title);
-        $(this).attr("data-title",text);
+        let text  = $(this).children().text();
+        $(this).children().fadeOut(200);
+        setTimeout(() => {
+            $(this).addClass("active");
+            $(this).children().text(title);
+            $(this).attr("data-title",text);
+            $(this).children().fadeIn(200);
+        }, 200);
     });
 
     $(".main__page>main>.section__main>.container>.right>.list .wrapper>.item").mouseleave(function(){
-        console.log(1);
         let title = $(this).attr("data-title");
-        let text  = $(this).text();
-        $(this).text(title);
-        $(this).attr("data-title",text);
+        let text  = $(this).children().text();
+        $(this).children().fadeOut(200);
+        setTimeout(() => {
+            $(this).removeClass("active");
+            $(this).children().text(title);
+            $(this).attr("data-title",text);
+            $(this).children().fadeIn(200);
+        }, 200);
+
     });
 
     resizer__section__our(true);
     $(window).resize(function(){
         resizer__section__our(false);
-    });
-    new Swiper("#swiper_lds",{
-        spaceBetween: 10,
-        slidesPerView: 1,
-        pagination: {
-            el: ".swiper-lds-pagination",
-            clickable: true,
-        },
-    });
-    new Swiper("#swiper_lds2",{
-        spaceBetween: 10,
-        slidesPerView: 1,
-        pagination: {
-            el: ".swiper-lds-pagination",
-            clickable: true,
-        },
-    });
-    new Swiper("#swiper_lds3",{
-        spaceBetween: 10,
-        slidesPerView: 1,
-        pagination: {
-            el: ".swiper-lds-pagination",
-            clickable: true,
-        },
     });
     new Swiper(".swiper__serteficate",{
         spaceBetween: 30,
@@ -136,6 +121,37 @@ $(document).ready(function(){
         }
     });
     
+
+    new Swiper("#swiper-list_2", {
+        spaceBetween: 30,
+        loop:true,
+        grabCursor: true,
+        slidesPerView: 4,
+        navigation: {
+            nextEl: ".button__right__list__23",
+            prevEl: ".button__left__list__23"
+        },
+        pagination: {
+            el: ".pagination_list_23",
+            clickable: true,
+            dynamicBullets:true,
+            dynamicMainBullets:5
+        },
+        breakpoints: {
+            1200:{},
+            1000:{
+                slidesPerView: 3,
+            },
+            900:{
+                slidesPerView: 2,
+            },
+            300:{
+                slidesPerView:"auto",
+                centeredSlides: true,
+                spaceBetween: 0,
+            }
+        }
+    });
 
     let swiper__work = new Swiper("#slider__who", {
         spaceBetween: 30,
@@ -311,36 +327,36 @@ $(document).ready(function(){
         swiper__work.slideTo(index, 600);
     });
 
-    $(".slick__items__2").slick({
-        arrows:true,
-        dots:true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: false,
-        responsive: [
-            {
-              breakpoint: 1400,
-              settings: {
-                slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 1000,
-                settings: {
-                  slidesToShow: 2,
-                  arrows:false
-                }
-            },
-            {
-                breakpoint: 500,
-                settings: {
-                  slidesToShow: 1,
-                  arrows:false,
-                  centerMode:true
-                }
-            }
-        ]
-    });
+    // $(".slick__items__2").slick({
+    //     arrows:true,
+    //     dots:true,
+    //     slidesToShow: 4,
+    //     slidesToScroll: 1,
+    //     autoplay: false,
+    //     responsive: [
+    //         {
+    //           breakpoint: 1400,
+    //           settings: {
+    //             slidesToShow: 3
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 1000,
+    //             settings: {
+    //               slidesToShow: 2,
+    //               arrows:false
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 500,
+    //             settings: {
+    //               slidesToShow: 1,
+    //               arrows:false,
+    //               centerMode:true
+    //             }
+    //         }
+    //     ]
+    // });
 
     $(window).resize(function(){
         init_slider();
@@ -398,7 +414,7 @@ $(document).ready(function(){
                         }
                     },
                     {
-                        breakpoint: 500,
+                        breakpoint: 600,
                         settings: {
                           slidesToShow: 1,
                           slidesToScroll: 1,
@@ -486,8 +502,6 @@ $(document).ready(function(){
         $("#slider__status__p").text(p);
         $(".custom__slider img.slider_active").css({opacity:"1"}); 
 
-        interval__slides();
-
     });
 
     $(".left__btn__6").click(function(){
@@ -508,8 +522,6 @@ $(document).ready(function(){
         $("#slider__status__title").text(title);
         $("#slider__status__p").text(p);
         $(".custom__slider img.slider_active").css({opacity:"1"}); 
-
-        interval__slides();
 
     });
     function init(){
