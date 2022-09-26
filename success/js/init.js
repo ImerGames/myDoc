@@ -19,7 +19,7 @@ $(document).ready(function(){
             let new_height = $(this).children().height();
             let width = $(this).children(".title").width();
             $(this).height(new_height);
-            $(this).width(width + 20);
+            $(this).width(width + 40);
             console.log(width);
         });
     }
