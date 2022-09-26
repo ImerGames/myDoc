@@ -22,7 +22,7 @@ $(document).ready(function(){
             $(this).height(new_height);
             $(this).width(width);
             console.log(width);
-        },10);
+        },1000);
        });
     }
     function setCustomHeight(obj , isOpen){
