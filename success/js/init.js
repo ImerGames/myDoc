@@ -27,6 +27,7 @@ $(document).ready(function(){
         let text = NaN;
         if(isOpen){
             text  = obj.children(".FrontText").text();
+            
         }else{
             text  = obj.children(".BackText").text();
         }
@@ -35,8 +36,12 @@ $(document).ready(function(){
         setTimeout(()=>{
             obj.children(".title").text(text);
             obj.toggleClass("active");
-            let new_width = obj.children(".title").width();
-            $(obj).css({"min-width":new_width});
+            if(isOpen){
+                let new_width = obj.children(".title").width();
+                $(obj).css({"min-width":new_width});
+            }else{
+                $(obj).css({"min-width":"100%"});
+            }
             $(obj).css({"max-width":600});
             setTimeout(()=>{
                 let new_height = obj.children(".title").height();
