@@ -5,7 +5,7 @@ $(document).ready(function(){
     let swiper_init = false;
     
     init_slider();    
-    initHeight();
+    // initHeight();
 
     $(".main__page>main>.section__main>.container>.right>.list .wrapper>.item").mouseenter(function(){
         setCustomHeight($(this) , false);
