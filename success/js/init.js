@@ -23,7 +23,7 @@ $(document).ready(function(){
             $(this).width(width);
             console.log(width);
         });
-       },1000);
+       },10000);
     }
     function setCustomHeight(obj , isOpen){
         let text = NaN;
