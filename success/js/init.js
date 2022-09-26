@@ -15,13 +15,15 @@ $(document).ready(function(){
     });
 
     function initHeight(){
+       setTimeout(function(){
         $(".section__main>.container>.right .item").each(function(){
             let new_height = $(this).children().height();
             let width = $(this).children(".title").width();
             $(this).height(new_height);
             $(this).width(width);
             console.log(width);
-        });
+        },10);
+       });
     }
     function setCustomHeight(obj , isOpen){
         let text = NaN;
