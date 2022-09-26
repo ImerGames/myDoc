@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(){   
     let swiper_our = null;
     let component = $(".grid__slider__list_our");
     let masonry_init = false;
@@ -19,6 +19,8 @@ $(document).ready(function(){
             let new_height = $(this).children().height();
             let width = $(this).children(".title").width();
             $(this).height(new_height);
+            $(this).width(width + 20);
+            console.log(width);
         });
     }
     function setCustomHeight(obj , isOpen){
@@ -29,18 +31,22 @@ $(document).ready(function(){
             text  = obj.children(".BackText").text();
         }
         
-        obj.children().fadeOut(100);
+        obj.children(".title").css({opacity:"0"});
         setTimeout(()=>{
             obj.children(".title").text(text);
             obj.toggleClass("active");
+            let new_width = obj.children(".title").width();
+            $(obj).css({"min-width":new_width});
+            $(obj).css({"max-width":600});
             setTimeout(()=>{
                 let new_height = obj.children(".title").height();
                 obj.height(new_height);    
+                new_width = obj.find(".title").width();
+                obj.width(new_width + 20);
                 setTimeout(() => {
-                    obj.children(".title").fadeIn(200);
+                    obj.children(".title").css({opacity:"1"});
                 }, 1);
             },200);
-
         },100);
     }
     resizer__section__our(true);

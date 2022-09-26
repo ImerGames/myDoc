@@ -226,11 +226,32 @@ header>.container>.info > img{
 .mobile__h2{
     display: none;
 }
-.swiper-pagination-swiper-4 , .swiper-pagination-swiper-5{
-    display: none;
+
+.swiper-pagination-swiper-4{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    & > span{
+        width: 10px;
+        height: 10px;
+        background: #6c6c6c;
+        border-radius: 50%;
+        &.swiper-pagination-bullet-active{
+            background: #EE964B;
+        }
+    }
 }
 
-
+.swiper-pagination-swiper-5{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    & > span{
+        &.swiper-pagination-bullet-active{
+            background: #EE964B !important;
+        }
+    }
+}
 // templates
 
 .section__speak{
