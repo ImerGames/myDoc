@@ -22,8 +22,8 @@ $(document).ready(function(){
             $(this).height(new_height);
             $(this).width(width);
             console.log(width);
-        },1000);
-       });
+        });
+       },1000);
     }
     function setCustomHeight(obj , isOpen){
         let text = NaN;
