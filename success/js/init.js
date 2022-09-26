@@ -20,7 +20,6 @@ $(document).ready(function(){
             let new_height = $(this).children().height();
             let width = $(this).children(".title").width();
             $(this).height(new_height);
-            $(this).width(width);
             console.log(width);
         });
        },10000);
