@@ -1,11 +1,14 @@
-$(document).ready(function(){   
+
+$(document).ready(function(){       
     let swiper_our = null;
     let component = $(".grid__slider__list_our");
     let masonry_init = false;
     let swiper_init = false;
     
     init_slider();    
-    initHeight();
+    setTimeout(()=>{
+        initHeight();
+    },100);
 
     $(".main__page>main>.section__main>.container>.right>.list .wrapper>.item").mouseenter(function(){
         setCustomHeight($(this) , false);
@@ -412,7 +415,7 @@ $(document).ready(function(){
             $(".slick_items").slick({
                 arrows:false,
                 dots:true,
-                slidesToShow: 3,
+                slidesToShow: 1,
                 slidesToScroll: 1,
                 responsive: [
                     {

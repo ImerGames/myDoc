@@ -978,7 +978,7 @@ header
                         & .item{
                             transform-style: preserve-3d;
                             transform: rotateY(0deg);
-                            transition: .5   s ease-in-out;
+                            transition: .5s ease-in-out;
                             z-index: 2;
                             margin-right: 20px;
                             border-radius: 30px;
@@ -2215,7 +2215,10 @@ header
     }
     .main__page>main>.section__main>.wrapper__scroll{
         position: absolute;
-        top:850px;
+        top:700px;
+    }
+    .main__page>main>.section__work.video>.container>h2{
+        margin-top: 35px !important;
     }
     .wrapper__scroll{
         display: none;
@@ -3517,12 +3520,6 @@ header
     .main__page>main>.section__work>.container>.wrapper__list__items>.list .item .wrapper__card>.logo{
         margin-top: 0;
         margin-bottom: 50px;
-    }
-    .main__page>main>.section__work>.container>.wrapper__list__items>.list .item{
-        transform: scale(.9);
-    }
-    .main__page>main>.section__work>.container>.wrapper__list__items>.list .item.swiper-slide-active{
-        transform: scale(1) !important;
     }
     .main__page>main>.section__work>.container>.wrapper__list__items>.list .item
     {
