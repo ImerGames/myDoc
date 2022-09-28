@@ -10,7 +10,7 @@ $(document).ready(function(){
 
     $(".main__page>main>.section__main>.container>.right>.list .wrapper>.item").mouseenter(function(){
         setCustomHeight($(this) , false);
-    });
+    }); 
     $(".main__page>main>.section__main>.container>.right>.list .wrapper>.item").mouseleave(function(){
         setCustomHeight($(this) , true);
     });
@@ -18,25 +18,23 @@ $(document).ready(function(){
         let element = $(this).closest('.item');
         let data = $(element).attr("data-open");
         if(data == "false"){
-            $(this).fadeOut(300);
-            $(element).find(".frontText").fadeOut(300);
+            $(element).css({"transform":"rotateY(180deg)"});
             setTimeout(function(){
+                $(element).children(".wrapper__card").css({"transform":"rotateY(180deg)"});
                 $(element).attr("data-open","true");
                 $(element).find(".open__item_problems").text("Закрыть");
-                $(element).find(".open__item_problems").fadeIn(100);
-
-                $(element).find(".backText").fadeIn(300);
+                $(element).find(".frontText").fadeOut(1);
+                $(element).find(".backText").fadeIn(1);
             },300);
         }else{
-            $(this).fadeOut(300);
-            $(element).find(".backText").fadeOut(300);
+            $(element).css({"transform":"rotateY(0deg)"});
             setTimeout(function(){
+                $(element).children(".wrapper__card").css({"transform":"rotateY(0deg)"});
                 $(element).attr("data-open","false");
                 $(element).find(".open__item_problems").text("Подробнее");
-                $(element).find(".open__item_problems").fadeIn(100);
-
-                $(element).find(".frontText").fadeIn(300);
-            },300);
+                $(element).find(".backText").fadeOut(1);
+                $(element).find(".frontText").fadeIn(1);
+            },250);
         }
     });
     function initHeight(){
@@ -45,9 +43,8 @@ $(document).ready(function(){
             let new_height = $(this).children().height();
             let width = $(this).children(".title").width();
             $(this).height(new_height);
-            console.log(width);
         });
-       },10000);
+       },100);
     }
     function setCustomHeight(obj , isOpen){
         let text = NaN;

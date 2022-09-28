@@ -976,7 +976,9 @@ header
                             display: flex;
                         }
                         & .item{
-                            transition: .3s ease-in-out;
+                            transform-style: preserve-3d;
+                            transform: rotateY(0deg);
+                            transition: .5s ease-in-out;
                             z-index: 2;
                             margin-right: 20px;
                             border-radius: 30px;
