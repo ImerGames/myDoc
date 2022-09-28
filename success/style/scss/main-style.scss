@@ -978,7 +978,7 @@ header
                         & .item{
                             transform-style: preserve-3d;
                             transform: rotateY(0deg);
-                            transition: .5s ease-in-out;
+                            transition: .5   s ease-in-out;
                             z-index: 2;
                             margin-right: 20px;
                             border-radius: 30px;
@@ -2213,9 +2213,9 @@ header
     {
         min-height: auto;
     }
-    .main__page>main>.section__main>.wrapper__scroll
-    {
-        display: none;
+    .main__page>main>.section__main>.wrapper__scroll{
+        position: absolute;
+        top:850px;
     }
     .wrapper__scroll{
         display: none;
@@ -2592,7 +2592,7 @@ header
         top:0;
         left: -100%;
         width: 100%;
-        height: auto;
+        height: 100vh;
         background: #EE964B;
         padding: 40px;
         z-index: 5;
@@ -3213,8 +3213,33 @@ header
     {
         margin-top: 30px;
     }
+    .main__page>main>.section__work.video>.container>.wrapper__video>iframe{
+        height: 200px;
+    }
 }
 @media (max-width:500px){
+    .main__page>main>.section__feedback>.container>.right>.image__wrapper>img{
+        margin-right: 20px;
+    }
+    .main__page>main>.section__feedback>.container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .main__page>main>.section__feedback>.container>.left>p
+    {
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+    .main__page>main>.section__work.video>.container>.wrapper__video{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .main__page>main>.section__main>.container>.right>.list{
+        margin-top: 40px;
+    }
+    .main__page>main>.section__main>.container>.right>.list .wrapper>.item>.title{
+        font-size: 14px;
+    }
     .main__page > main > .section__work > .container > .wrapper__list__items .pagination_list_23{
         bottom: 35px;
     }
@@ -3224,6 +3249,15 @@ header
     .main__page>main>.section__main>.container>.left>.logo>img
     {
         left: 0;
+        content: url(/success/img/logo/logo_v2_mobile.svg);
+    }
+    .main__page>main>.section__main>.container>.left>.logo>.pre
+    {
+        padding-top: 10px;
+    }
+    .background__images>.bg_1{
+        content: url(/success/img/background/dec/bg_display_1.1_mobile.png);
+        max-width: 100% !important;
     }
     .main__page>main>.section__main>.container>.right .slick-slide{
         margin-right: 0;
@@ -3342,8 +3376,20 @@ header
     }
     .main__page>main>.section__facts>.container>.list .item__container
     {
-        width: 250px;
-        height: 250px;
+        width: 198px;
+        height: 198px;
+    }
+    .main__page>main>.section__settings
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .main__page>main>.section__how>.container>h2
+    {
+        margin-bottom: 16px;
+    }
+    .main__page>main>.section__facts{
+        padding-bottom: 60px;
     }
     .main__page>main>.section__facts>.container>.list .item__container
     {
@@ -3473,10 +3519,10 @@ header
         margin-bottom: 50px;
     }
     .main__page>main>.section__work>.container>.wrapper__list__items>.list .item{
-        transform: scale(.8);
+        transform: scale(.9);
     }
-    .main__page>main>.section__work>.container>.wrapper__list__items>.list .item.slick-current{
-        transform: scale(1);
+    .main__page>main>.section__work>.container>.wrapper__list__items>.list .item.swiper-slide-active{
+        transform: scale(1) !important;
     }
     .main__page>main>.section__work>.container>.wrapper__list__items>.list .item
     {
@@ -3534,7 +3580,31 @@ header
             width: 140px;
         }
     }
+    .section__partners>.container>h2{
+        margin-bottom: 40px;
+    }
+    .section__partners{
+        padding-top: 0;
+    }
     .main__page>main>.section__settings{
         margin-top: 70px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .main__page>main>.section__settings
+    {
+        margin-bottom: 40px;
+    }
+    .section__partners
+    {
+        padding-bottom: 20px;
+    }
+    .background__images>.footer_bg
+    {
+        content: url(/success/img/background/dec/footer_bg_2.png);
+    }
+    footer>.container>.head>div
+    {
+        margin-top: 20px;
     }
 }

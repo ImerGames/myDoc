@@ -1,5 +1,4 @@
 $(document).ready(function(){   
-    $("iframe").remove();
     let swiper_our = null;
     let component = $(".grid__slider__list_our");
     let masonry_init = false;
@@ -194,7 +193,7 @@ $(document).ready(function(){
             300:{
                 slidesPerView:"auto",
                 centeredSlides: true,
-                spaceBetween: 0,
+                spaceBetween: 10
             }
         }
     });
