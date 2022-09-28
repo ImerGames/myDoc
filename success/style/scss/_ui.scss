@@ -8,6 +8,10 @@ header>.container>.info > img{
 .our__pagination{
     display: none !important;
 }
+.section__work .item .backText{
+    display: none;
+    font-size: 18px;
+}
 .mobile{
     display: none !important;
 }
@@ -57,7 +61,7 @@ header>.container>.info > img{
     font-weight: 400;
     border-radius: 50px;
     box-shadow: rgb(238 150 75 / 40%) 15px 10px 40px -2px;
-    transition: .3s ease-in-out;
+    transition: background .3s ease-in-out;
     &:hover{
         background: #e0934f;
     }

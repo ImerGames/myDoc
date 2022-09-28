@@ -1986,6 +1986,11 @@ header
     }
 }
 
+.main__page>main>.section__work>.container>.wrapper__list__items>.list .item .wrapper__card>h3.backText{
+    display: none;
+    font-size: 17px;
+}
+
 @media (max-width:1700px){
     header>.container>.logo{
         display: flex;

@@ -1,4 +1,5 @@
 $(document).ready(function(){   
+    $("iframe").remove();
     let swiper_our = null;
     let component = $(".grid__slider__list_our");
     let masonry_init = false;
@@ -13,7 +14,31 @@ $(document).ready(function(){
     $(".main__page>main>.section__main>.container>.right>.list .wrapper>.item").mouseleave(function(){
         setCustomHeight($(this) , true);
     });
+    $(".open__item_problems").click(function(){
+        let element = $(this).closest('.item');
+        let data = $(element).attr("data-open");
+        if(data == "false"){
+            $(this).fadeOut(300);
+            $(element).find(".frontText").fadeOut(300);
+            setTimeout(function(){
+                $(element).attr("data-open","true");
+                $(element).find(".open__item_problems").text("Закрыть");
+                $(element).find(".open__item_problems").fadeIn(100);
 
+                $(element).find(".backText").fadeIn(300);
+            },300);
+        }else{
+            $(this).fadeOut(300);
+            $(element).find(".backText").fadeOut(300);
+            setTimeout(function(){
+                $(element).attr("data-open","false");
+                $(element).find(".open__item_problems").text("Подробнее");
+                $(element).find(".open__item_problems").fadeIn(100);
+
+                $(element).find(".frontText").fadeIn(300);
+            },300);
+        }
+    });
     function initHeight(){
        setTimeout(function(){
         $(".section__main>.container>.right .item").each(function(){
@@ -148,7 +173,7 @@ $(document).ready(function(){
 
     new Swiper("#swiper-list_2", {
         spaceBetween: 30,
-        loop:true,
+        loop:false,
         grabCursor: true,
         slidesPerView: 4,
         navigation: {
