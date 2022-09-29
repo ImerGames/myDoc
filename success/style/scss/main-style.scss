@@ -89,6 +89,9 @@ header
                     }
                 }
             }
+            & > .phone{
+                display: none;
+            }
         }
         & > .info{
             display: flex;
@@ -927,7 +930,7 @@ header
                         left: 50%;
                         bottom: -20px;
                         transform: translateX(-50%);
-                        margin-top: 40px;
+                        margin-top: 60px;
                         justify-content: center;
                         & > span{
                             transition: .3s ease-in-out;
@@ -1012,6 +1015,7 @@ header
                             & .wrapper__card{
                                 height: 100%;
                                 min-height: 500px;
+                                height: 350px;
                                 border-radius: 30px;
                                 border:solid 1px #EE964B;
                                 padding: 30px;
@@ -1022,13 +1026,12 @@ header
                                     display: flex;
                                     justify-content: center;
                                     margin-top: 30px;
-                                    margin-bottom: 40px;
+                                    margin-bottom: 0px !important;
                                 }
                                 & > h3{
                                     text-align: center;
                                     font-size: 19px;
                                     font-weight: 400;
-                                    margin-bottom: 60px;
                                 }
                                 & > .wrapper__button{
                                     display: flex;
@@ -2130,6 +2133,36 @@ header
     }
 }
 @media (max-width:1200px){
+    .pagination__facts{
+        display: flex;
+        justify-content: center;
+        bottom: 0px !important;
+        width: 100%;
+        position: absolute;
+        & > .swiper-pagination-bullet-active{
+            background: #EE964B;
+        }
+    }
+    .sist__slide__facts {
+        padding-bottom: 40px !important;
+    }
+    header>.container>nav>.phone{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        bottom:20px;
+        z-index: 10;
+        width: 100%;
+        left: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        & > a{
+            color:white;
+            text-decoration: none;
+            font-size: 30px;
+        }
+    }
     .main__page>main>.section__main>.container>.right>.list .wrapper>.item{
         width: 100% !important;
     }
@@ -2596,7 +2629,7 @@ header
         left: -100%;
         width: 100%;
         height: 100vh;
-        background: #EE964B;
+        background: #e48739;
         padding: 40px;
         z-index: 5;
         transition: .5s ease-out;
@@ -2837,6 +2870,10 @@ header
     }
 }
 @media (max-width:900px){
+    .main__page>main>.section__main>.container>.right>.list .wrapper{
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
     .button__left__list__23 , .button__right__list__23{
         display: none;
     }
@@ -3157,9 +3194,20 @@ header
     {
         margin-bottom: 18px;
     }
+    footer>.container>.head>div{
+        margin-bottom: 60px;
+        &:nth-child(3){
+            margin-bottom: 10px;
+        }
+        &:nth-child(4){
+            & .title{
+                display: none;
+            }
+        }
+    }
     footer>.container>.head{
         grid-template-columns: 1fr;
-        grid-gap: 60px;
+        grid-gap: 0;
     }
     footer>.container>.head{
         margin-bottom: 100px;
@@ -3221,6 +3269,65 @@ header
     }
 }
 @media (max-width:500px){
+    .main__page>main>.section__feedback>.container{
+        padding-bottom: 0;
+    }
+    .main__page>main>.section__feedback{
+        padding-bottom: 50px;
+        margin-bottom: 60px;
+    }
+    .background__images>.bg_2{
+        top:40%;
+    }
+    .main__page>main>.section__partners>.container>.grid__container>.item:nth-child(5) , .main__page > main > .section__partners > .container > .grid__container > .item:nth-child(9){
+        top:160px !important;
+    }
+    .main__page>main>.section__health>.container{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .main__page>main>.section__health>.container>.slides>.slideses>.text__dec{
+        right: -122px;
+    }
+    .main__page>main>.section__review>.container>.container__screenshot>h2>b{
+        margin-right: 0;
+    }
+    .main__page>main>.section__review>.container>.container__screenshot>h2>.smile{
+        right: 32px;
+    }
+    .main__page>main>.section__settings>.container>.wrapper__inputs>button{
+        width: 68px;
+        height: 68px;
+        top:4px;
+        right: 5px;
+    }
+    .main__page>main>.section__settings>.container>.wrapper__inputs>.ui-input-2:nth-child(2){
+        width: 100px !important;
+    }
+    .main__page>main>.section__facts{
+        padding-top: 50px;
+    }
+    .main__page>main>.section__feedback>.container>.left>.wrapper__button{
+        margin-top: 30px;
+    }
+    .main__page > main > .section__feedback > .container > .left > .wrapper__input > p{
+        margin-right: 10px;
+    }
+    .main__page>main>.section__feedback>.container>.left>.wrapper__input>p{
+        margin-top: 15px;
+    }
+    .main__page>main>.section__work>.container>.wrapper__list__items>.list .item .wrapper__card>h3.backText{
+        font-size: 14px;
+    }
+    header>.container>nav>.phone .button__ui__1-mini{
+        font-size: 14px !important;
+    }
+    header>.container>nav>.phone>a{
+        font-size: 17px;
+    }
+    .main__page>main>.section__work.video>.container>.wrapper__video>iframe{
+        height: 185px;
+    }
     .main__page>main>.section__feedback>.container>.right>.image__wrapper>img{
         margin-right: 20px;
     }
@@ -3519,7 +3626,6 @@ header
     }
     .main__page>main>.section__work>.container>.wrapper__list__items>.list .item .wrapper__card>.logo{
         margin-top: 0;
-        margin-bottom: 50px;
     }
     .main__page>main>.section__work>.container>.wrapper__list__items>.list .item
     {

@@ -1,5 +1,5 @@
 
-$(document).ready(function(){       
+$(document).ready(function(){     
     let swiper_our = null;
     let component = $(".grid__slider__list_our");
     let masonry_init = false;
@@ -42,7 +42,7 @@ $(document).ready(function(){
     function initHeight(){
        setTimeout(function(){
         $(".section__main>.container>.right .item").each(function(){
-            let new_height = $(this).children().height();
+            let new_height = $(this).children(".title").height();
             let width = $(this).children(".title").width();
             $(this).height(new_height);
         });
@@ -137,6 +137,34 @@ $(document).ready(function(){
             swiper: swiper_thrumb_express,
         },
     });
+
+    var swiperFacts = new Swiper(".sist__slide__facts", {
+        spaceBetween: 10,
+        slidesPerView: 5,
+        pagination: {
+            el: ".pagination__facts",
+            clickable: true
+        },
+        breakpoints: {
+            300:{
+              centeredSlides: true,
+              slidesPerView: 2,
+              spaceBetween: 20,
+           },
+            600:{
+              slidesPerView: 3,
+              centeredSlides: true,
+            },
+            900:{
+                slidesPerView: 3,
+                centeredSlides: true,
+            },
+            1200:{
+                slidesPerView: 5,
+            }
+        }
+    });
+
     $('.fancybox').fancybox({
         helpers : {
             title : {
@@ -363,8 +391,10 @@ $(document).ready(function(){
             $(".nav__bar > li").eq(index).addClass("active");
             $(".nav__bar > li").each(function(){
                 if($(this).hasClass("active")){
+                    $(this).css("opacity","1");
                     return false;
                 }
+                $(this).css("opacity",".7");
                 $(this).addClass("active");
             });
         });
@@ -411,7 +441,7 @@ $(document).ready(function(){
     });
 
     function init_slider(){
-        if($(window).width() <= 1200 && $(".slick_items").hasClass("slick-initialized") == false){
+        if($(window).width() <= 1200 && $(".swiper_first").hasClass("swiper-initialized") == false){
             $(".slick_items").slick({
                 arrows:false,
                 dots:true,
@@ -475,52 +505,6 @@ $(document).ready(function(){
         }else if($(".slick__program").hasClass("slick-initialized") == true && $(window).width() >= 1200 ){
             $(".slick__program").slick("unslick");
         }
-
-        if($(window).width() <= 1200 && $(".sist__slide__facts").hasClass("slick-initialized") == false){
-            $(".sist__slide__facts").slick({
-                arrows:false,
-                dots:false,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                centerMode:true,
-                responsive: [
-                    {
-                      breakpoint: 1000,
-                      settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false,
-                        adaptiveHeight: true
-                        }
-                    },
-                    {
-                        breakpoint: 800,
-                        settings: {
-                          slidesToShow: 2,
-                          slidesToScroll: 1,
-                          infinite: true,
-                          dots: false,
-                          adaptiveHeight: true
-                          }
-                      },
-                    {
-                        breakpoint: 500,
-                        settings: {
-                          slidesToShow:1,
-                          slidesToScroll: 1,
-                          infinite: true,
-                          dots: false,
-                          adaptiveHeight: false
-                        }
-                    }
-                ]
-            });
-        }else if($(".sist__slide__facts").hasClass("slick-initialized") == true && $(window).width() >= 1200 ){
-            $(".sist__slide__facts").slick("unslick");
-        }
-
-        
     }
     //customSlider 
     init();
