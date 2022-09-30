@@ -16,6 +16,13 @@ $(document).ready(function(){
     $(".main__page>main>.section__main>.container>.right>.list .wrapper>.item").mouseleave(function(){
         setCustomHeight($(this) , true);
     });
+    $(".openVideoFile").click(function(){
+        $(this).parent().find("video").trigger('play');
+        $(this).parent().find(".play").fadeOut(300);
+        setTimeout(()=> {
+            $(this).parent().find("video").attr("controls","true");
+        },300);
+    });
     $(".open__item_problems").click(function(){
         let element = $(this).closest('.item');
         let data = $(element).attr("data-open");
