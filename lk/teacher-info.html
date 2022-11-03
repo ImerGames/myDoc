@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/custom_style.css">
+    <title>Lingo</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <ul class="list">
+                <li>
+                    <span class="title">Teachers</span>
+                    <ul class="menu">
+                        <li class="title">Teacher’s info</li>
+                        <li><a href="#">Add teacher</a></li>
+                        <li><a href="#">Lessons</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="title">Upload</span>
+                    <ul class="menu">
+                        <li><a href="#">Links</a></li>
+                        <li><a href="#">Study books</a></li>
+                        <li><a href="#">Training videos</a></li>
+                        <li><a href="#">Videos for students</a></li>
+                        <li><a href="#">Options</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="title">Display</span>
+                    <ul class="menu">
+                        <li><a href="#">Links</a></li>
+                        <li><a href="#">Study books</a></li>
+                        <li><a href="#">Training videos</a></li>
+                        <li><a href="#">Videos for students</a></li>
+                        <li><a href="#">Options</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="title">Events</span>
+                    <ul class="menu">
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Add event</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="title">Statistics</span>
+                    <ul class="menu">
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Lessons</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="teacher-page">
+        <section class="section__filter">
+            <div class="container">
+                <div class="header">
+                    <h1>Teacher’s info</h1>
+                    <button class="btn-ui-1">Add teacher</button>
+                </div>
+                <div class="filter">
+                    <div class="select select-ui-1">
+                        <div class="display">
+                            <div class="left">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.0107 0.875L12.417 3.57031V8.24219L10.2607 6.625L6.66699 9.32031V13.9922L4.51074 12.375L0.916992 15.0703V19.5625H2.35449V15.7891L4.51074 14.1719L6.66699 15.7891V19.5625H8.10449V10.0391L10.2607 8.42188L12.417 10.0391V19.5625H13.8545V4.28906L16.0107 2.67188L18.167 4.28906V19.5625H19.6045V3.57031L16.0107 0.875Z" fill="black" fill-opacity="0.5"/>
+                                </svg>
+                                <span class="title">All</span>    
+                            </div>   
+                            <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L10 10L19 1" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"/>
+                            </svg>                             
+                        </div>
+                    </div>
+                    <div class="select select-ui-1">
+                        <div class="display">
+                            <div class="left">
+                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_611_120)">
+                                    <path d="M19.4485 0.948436V0.829887C19.4485 0.372313 19.0762 0 18.6186 0H17.6701C17.2126 0 16.8402 0.372313 16.8402 0.829887V0.948436H13.2836V0.829887C13.2836 0.372313 12.9112 0 12.4537 0H11.5052C11.0477 0 10.6753 0.372313 10.6753 0.829887V0.948436H7.11866V0.829887C7.11861 0.372313 6.7463 0 6.28873 0H5.34029C4.88267 0 4.51036 0.372313 4.51036 0.829887V0.948436H0.479431V23H23.4794V0.948436H19.4485ZM17.5516 0.829887C17.5516 0.765648 17.6059 0.711338 17.6701 0.711338H18.6186C18.6828 0.711338 18.7371 0.765648 18.7371 0.829887V2.84535H17.5515V0.829887H17.5516ZM11.3866 0.829887C11.3866 0.765648 11.441 0.711338 11.5052 0.711338H12.4536C12.5179 0.711338 12.5722 0.765648 12.5722 0.829887V2.84535H11.3866V0.829887H11.3866ZM5.2217 0.829887C5.2217 0.765648 5.27601 0.711338 5.34025 0.711338H6.28868C6.35292 0.711338 6.40723 0.765648 6.40723 0.829887V2.84535H5.22165V0.829887H5.2217ZM22.7681 22.2887H1.19077V7.35052H22.7681V22.2887ZM22.7681 6.63918H1.19077V5.45361H20.2784V4.74227H1.19077V1.65977H4.51036V3.55669H7.11862V1.65977H10.6753V3.55669H13.2836V1.65977H16.8402V3.55669H19.4485V1.65977H22.7681V6.63918Z" fill="#808080"/>
+                                    <path d="M11.6238 8.29895V11.3814H2.13922V21.3402H17.0774V18.4949H21.8196V8.29895H11.6238ZM6.88149 20.6288H2.8506V18.4948H6.88153V20.6288H6.88149ZM6.88149 17.7835H2.8506V15.1752H6.88153V17.7835H6.88149ZM6.88149 14.4639H2.8506V12.0927H6.88153V14.4639H6.88149ZM11.6238 20.6288H7.59283V18.4948H11.6238V20.6288ZM11.6238 17.7835H7.59283V15.1752H11.6238V17.7835ZM11.6238 14.4639H7.59283V12.0927H11.6238V14.4639ZM16.366 20.6288H12.3351V18.4948H16.366V20.6288ZM16.366 17.7835H12.3351V15.1752H16.366V17.7835ZM16.366 14.4639H12.3351V12.0927H16.366V14.4639ZM16.366 11.3814H12.3351V9.01029H16.366V11.3814ZM21.1083 17.7835H17.0774V15.1752H21.1083V17.7835ZM21.1083 14.4639H17.0774V12.0927H21.1083V14.4639ZM21.1083 11.3814H17.0774V9.01029H21.1083V11.3814Z" fill="#808080"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_611_120">
+                                    <rect width="23" height="23" fill="white" transform="translate(0.479431)"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                    
+                                <span class="title">Period</span>    
+                            </div>   
+                            <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L10 10L19 1" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"/>
+                            </svg>                             
+                        </div>
+                    </div>
+                    <button class="btn-ui-2">Search</button>
+                    <button class="btn-ui-2">Refresh</button>
+                </div>
+            </div>
+        </section>
+        <section class="section__info">
+            <div class="container">
+                <div class="tables">
+                    <div class="header">
+                        <div class="column">
+                            <span class="title big">№</span>
+                        </div>
+                        <div class="column">
+                            <span class="title">Name</span>
+                        </div>
+                        <div class="column">
+                            <span class="title">Date</span>
+                        </div>
+                        <div class="column">
+                            <span class="title">Email</span>
+                        </div>
+                        <div class="column">
+                            <span class="title">Phone</span>
+                        </div>
+                        <div class="column">
+                            <span class="title">Skype</span>
+                        </div>
+                    </div>
+                    <div class="tbody">
+                        <div class="info">
+                            <div class="column num">
+                                <div class="num">1</div>
+                                <img src="/image/avatar/1.png" alt="avatar"/>
+                            </div>
+                            <div class="column name text">
+                                <span class="title">
+                                    Artem Samchenko
+                                </span>
+                            </div>
+                            <div class="column date text">
+                                <span class="title">
+                                    22.22.2222
+                                </span>
+                            </div>
+                            <div class="column mail text">
+                                <span class="title">
+                                    Email.mail@gmail.com
+                                </span>
+                            </div>
+                            <div class="column phone">
+                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="23" height="23" fill="url(#pattern0)"/>
+                                    <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_7_907" transform="scale(0.00195312)"/>
+                                    </pattern>
+                                    <image id="image0_7_907" width="512" height="512" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAGxElEQVR4nO3YQXECURBF0R6KRSpIiZbYiKjYQAtSCEvigqbqnmOg3+7fmRkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN7XsT1gfq6f2xMA4OV+v/82z583j8/MzP3jvj0BABasfoSfNo8DADsEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQcf2gOdtntsbAODVjq/dN9gfAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAASdtwfMYy7bEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADexz+MrgtAzzn6/QAAAABJRU5ErkJggg=="/>
+                                    </defs>
+                                    </svg>
+                                    
+                                <span class="title">
+                                    +3809547445
+                                </span>
+                            </div>
+                            <div class="column mail text">
+                                <span class="title">
+                                    Skulaefe
+                                </span>
+                            </div>
+                        </div>
+                        <div class="pre">
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">First name:</div>
+                                    <div class="text">anyinfo</div>
+                                    
+                                </div>
+                                <div class="column">
+                                    <div class="title">Education:</div>
+                                    <div class="text">anyinfo</div>
+                                </div>
+                                <div class="column">
+                                    <div class="title">Type of students:</div>
+                                    <div class="text">anyinfo</div>
+                                    <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.5 1L7 7.5L13.5 1" stroke="black" stroke-opacity="0.34"/>
+                                    </svg>                                        
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">Last name:</div>
+                                    <div class="text">anyinfo</div>
+                                    
+                                </div>
+                                <div class="column">
+                                    <div class="title">Experience:</div>
+                                    <div class="text">anyinfo</div>
+                                </div>
+                                <div class="column">
+                                    <div class="title">Type of students:</div>
+                                    <div class="text">anyinfo</div>
+                                    <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.5 1L7 7.5L13.5 1" stroke="black" stroke-opacity="0.34"/>
+                                    </svg>                                        
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">Age:</div>
+                                    <div class="text">anyinfo</div>
+                                    
+                                </div>
+                                <div class="column">
+                                    <div class="title">Work:</div>
+                                    <div class="text">anyinfo</div>
+                                </div>
+                                <div class="column">
+                                    <div class="title">School’s rating:</div>
+                                    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 0.5L15.9187 9.48278H25.3637L17.7225 15.0344L20.6412 24.0172L13 18.4656L5.35879 24.0172L8.27747 15.0344L0.636266 9.48278H10.0813L13 0.5Z" fill="#F1FF4C"/>
+                                        <path d="M13 1.30902L15.6809 9.56003L15.737 9.73278H15.9187H24.5943L17.5756 14.8322L17.4286 14.939L17.4848 15.1117L20.1657 23.3627L13.1469 18.2633L13 18.1565L12.8531 18.2633L5.83432 23.3627L8.51524 15.1117L8.57137 14.939L8.42442 14.8322L1.40569 9.73278H10.0813H10.263L10.3191 9.56003L13 1.30902Z" stroke="black" stroke-opacity="0.26" stroke-width="0.5"/>
+                                    </svg>
+                                    <span class="text">4.9</span>                                                                          
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">Country:</div>
+                                    <div class="text">anyinfo</div>
+                                    
+                                </div>
+                                <div class="column">
+                                    <div class="title">Action:</div>
+                                    <div class="text">anyinfo</div>
+                                </div>
+                                <div class="column">
+                                    <div class="title">School’s rating:</div>
+                                    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 0.5L15.9187 9.48278H25.3637L17.7225 15.0344L20.6412 24.0172L13 18.4656L5.35879 24.0172L8.27747 15.0344L0.636266 9.48278H10.0813L13 0.5Z" fill="#F1FF4C"/>
+                                        <path d="M13 1.30902L15.6809 9.56003L15.737 9.73278H15.9187H24.5943L17.5756 14.8322L17.4286 14.939L17.4848 15.1117L20.1657 23.3627L13.1469 18.2633L13 18.1565L12.8531 18.2633L5.83432 23.3627L8.51524 15.1117L8.57137 14.939L8.42442 14.8322L1.40569 9.73278H10.0813H10.263L10.3191 9.56003L13 1.30902Z" stroke="black" stroke-opacity="0.26" stroke-width="0.5"/>
+                                    </svg>
+                                    <span class="text">4.9</span>                                                                          
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="column">
+                                    <div class="title">City:</div>
+                                    <div class="text">anyinfo</div>
+                                    
+                                </div>
+                                <div class="column">
+                                    <div class="title">Statuts:</div>
+                                    <div class="text">anyinfo</div>
+                                </div>
+                            </div>
+
+                            <div class="button-wrapper">
+                                <button class="btn-ui-2">View</button>
+                                <button class="btn-ui-2">Edit</button>
+                                <div class="chacked ui-swipe-checked" data-checked="true">
+                                    <span class="title active">Activate</span>
+                                    <span class="title">Disactivate</span>
+                                    <div class="bg_select"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tbody">
+                        <div class="info">
+                            <div class="column num">
+                                <div class="num">1</div>
+                                <img src="/image/avatar/1.png" alt="avatar"/>
+                            </div>
+                            <div class="column name text">
+                                <span class="title">
+                                    Artem Samchenko
+                                </span>
+                            </div>
+                            <div class="column date text">
+                                <span class="title">
+                                    22.22.2222
+                                </span>
+                            </div>
+                            <div class="column mail text">
+                                <span class="title">
+                                    Email.mail@gmail.com
+                                </span>
+                            </div>
+                            <div class="column phone">
+                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="23" height="23" fill="url(#pattern0)"/>
+                                    <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_7_907" transform="scale(0.00195312)"/>
+                                    </pattern>
+                                    <image id="image0_7_907" width="512" height="512" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAGxElEQVR4nO3YQXECURBF0R6KRSpIiZbYiKjYQAtSCEvigqbqnmOg3+7fmRkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN7XsT1gfq6f2xMA4OV+v/82z583j8/MzP3jvj0BABasfoSfNo8DADsEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQcf2gOdtntsbAODVjq/dN9gfAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAASdtwfMYy7bEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADexz+MrgtAzzn6/QAAAABJRU5ErkJggg=="/>
+                                    </defs>
+                                    </svg>
+                                    
+                                <span class="title">
+                                    +3809547445
+                                </span>
+                            </div>
+                            <div class="column mail text">
+                                <span class="title">
+                                    Skulaefe
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tbody">
+                        <div class="info">
+                            <div class="column num">
+                                <div class="num">1</div>
+                                <img src="/image/avatar/1.png" alt="avatar"/>
+                            </div>
+                            <div class="column name text">
+                                <span class="title">
+                                    Artem Samchenko
+                                </span>
+                            </div>
+                            <div class="column date text">
+                                <span class="title">
+                                    22.22.2222
+                                </span>
+                            </div>
+                            <div class="column mail text">
+                                <span class="title">
+                                    Email.mail@gmail.com
+                                </span>
+                            </div>
+                            <div class="column phone">
+                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="23" height="23" fill="url(#pattern0)"/>
+                                    <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_7_907" transform="scale(0.00195312)"/>
+                                    </pattern>
+                                    <image id="image0_7_907" width="512" height="512" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAGxElEQVR4nO3YQXECURBF0R6KRSpIiZbYiKjYQAtSCEvigqbqnmOg3+7fmRkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN7XsT1gfq6f2xMA4OV+v/82z583j8/MzP3jvj0BABasfoSfNo8DADsEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQcf2gOdtntsbAODVjq/dN9gfAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAASdtwfMYy7bEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADexz+MrgtAzzn6/QAAAABJRU5ErkJggg=="/>
+                                    </defs>
+                                    </svg>
+                                    
+                                <span class="title">
+                                    +3809547445
+                                </span>
+                            </div>
+                            <div class="column mail text">
+                                <span class="title">
+                                    Skulaefe
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tbody">
+                        <div class="info">
+                            <div class="column num">
+                                <div class="num">1</div>
+                                <img src="/image/avatar/1.png" alt="avatar"/>
+                            </div>
+                            <div class="column name text">
+                                <span class="title">
+                                    Artem Samchenko
+                                </span>
+                            </div>
+                            <div class="column date text">
+                                <span class="title">
+                                    22.22.2222
+                                </span>
+                            </div>
+                            <div class="column mail text">
+                                <span class="title">
+                                    Email.mail@gmail.com
+                                </span>
+                            </div>
+                            <div class="column phone">
+                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="23" height="23" fill="url(#pattern0)"/>
+                                    <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_7_907" transform="scale(0.00195312)"/>
+                                    </pattern>
+                                    <image id="image0_7_907" width="512" height="512" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAGxElEQVR4nO3YQXECURBF0R6KRSpIiZbYiKjYQAtSCEvigqbqnmOg3+7fmRkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN7XsT1gfq6f2xMA4OV+v/82z583j8/MzP3jvj0BABasfoSfNo8DADsEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQcf2gOdtntsbAODVjq/dN9gfAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAASdtwfMYy7bEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADexz+MrgtAzzn6/QAAAABJRU5ErkJggg=="/>
+                                    </defs>
+                                    </svg>
+                                    
+                                <span class="title">
+                                    +3809547445
+                                </span>
+                            </div>
+                            <div class="column mail text">
+                                <span class="title">
+                                    Skulaefe
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
