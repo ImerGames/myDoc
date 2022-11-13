@@ -1,0 +1,45 @@
+main.portfolio-page{
+    & > .container{
+        & > .crumbs-container{
+            display: flex;
+            align-items: center;
+            & > a{
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 100%;
+                color: #8E8F8E;
+                opacity: 0.7;
+                padding-right: 12px;
+                padding-left: 12px;
+                position: relative;
+                text-decoration: none;
+                &:last-child{
+                    &::after{
+                        display: none;
+                    }
+                }
+                &.active{
+                    cursor: default;
+                    color:#DA2328;
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    background: #DA2328;
+                    top:50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+    & > .section__cases>.container>.container-cases>.more-wrapper{
+        justify-content: center;
+        & > button{
+            color:black;
+        }
+    }
+}
